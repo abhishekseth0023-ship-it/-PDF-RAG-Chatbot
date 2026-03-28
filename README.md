@@ -4,7 +4,7 @@ A Retrieval-Augmented Generation chatbot that answers questions from uploaded PD
 
 ## Demo
 
-![Chatbot Demo](assets/demo.png)
+![Chatbot Demo](assets/UI.png)
 
 ## Features
 - Multi-PDF support
