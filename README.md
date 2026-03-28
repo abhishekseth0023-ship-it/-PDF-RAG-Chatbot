@@ -2,7 +2,7 @@
 
 A Retrieval-Augmented Generation chatbot that answers questions from uploaded PDFs.
 
-## Demo
+## User Interface
 
 ![Chatbot Demo](assets/UI.png)
 
