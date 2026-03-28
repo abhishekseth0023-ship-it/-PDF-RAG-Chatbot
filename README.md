@@ -8,19 +8,30 @@ A Retrieval-Augmented Generation chatbot that answers questions from uploaded PD
 
 ## System Architecture
 
-User Query  
-   ↓  
-Streamlit Chat Interface  
-   ↓  
-Retriever (FAISS)  
-   ↓  
-Relevant PDF Chunks  
-   ↓  
-Prompt + Context  
-   ↓  
-Ollama LLM  
-   ↓  
-Answer + Source Citation
+User uploads PDFs
+      ↓
+PDF Loader (PyMuPDF)
+      ↓
+Document Chunking
+(RecursiveCharacterTextSplitter)
+      ↓
+Embeddings Generation
+(HuggingFace Sentence Transformers)
+      ↓
+Vector Storage
+(FAISS Vector Database)
+      ↓
+User Query
+      ↓
+Retriever (FAISS similarity search)
+      ↓
+Relevant Document Chunks
+      ↓
+Prompt Construction (Question + Context)
+      ↓
+LLM (Ollama - Phi3)
+      ↓
+Answer + Source Pages
 
 ## Features
 - Multi-PDF support
